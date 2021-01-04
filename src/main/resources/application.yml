@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: DemoApplication
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    #47.100.0.69
+    url: jdbc:mysql://192.168.3.20:3306/school?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.25:8848
+
+
+
+
+server:
+  port: 8083
