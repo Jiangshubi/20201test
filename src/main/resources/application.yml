@@ -4,7 +4,7 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     #47.100.0.69
-    url: jdbc:mysql://192.168.3.20:3306/school?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://192.168.3.200:3306/school?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: 123456
 
@@ -19,7 +19,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.3.25:8848
+        server-addr: 192.168.3.200:8848
 
 
 
